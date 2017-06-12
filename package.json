@@ -1,0 +1,23 @@
+{
+  "name": "less",
+  "version": "0.1.0",
+  "description": "Example project showing how to use LESS middleware",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "less-middleware": "2.2.0",
+    "less-loader": "^4.0.4"
+  },
+  "engines": {
+    "node": "6.9.5"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "less"
+  ],
+  "license": "MIT"
+}
