@@ -5,6 +5,7 @@
 var express = require('express');
 var app = express();
 var lessMiddleware = require("less-middleware");
+var path = require('path');
  
 app.use(lessMiddleware('/less', {
   dest: '/css',
