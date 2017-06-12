@@ -6,8 +6,11 @@ var express = require('express');
 var app = express();
 var lessMiddleware = require("less-middleware");
  
-app.use(lessMiddleware(__dirname + '/public'));
-app.use(express.static(__dirname + '/public'));
+app.use(lessMiddleware('/less', {
+  dest: '/css',
+  pathRoot: path.join(__dirname, 'public')
+}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
