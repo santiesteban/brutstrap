@@ -1,7 +1,7 @@
 {
   "name": "less",
   "version": "0.1.0",
-  "description": "Example project showing how to use LESS middleware",
+  "description": "Use less middleware to compile LESS",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
