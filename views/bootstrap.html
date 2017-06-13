@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lessy</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//getbootstrap.com/assets/css/docs.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="bs-docs-section">
+            <h1 class="page-header" id="buttons"><a class="anchorjs-link " href="#buttons" aria-label="Anchor link for: buttons" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Buttons</h1>
+            <h2 id="buttons-tags">
+            <a class="anchorjs-link " href="#buttons-tags" aria-label="Anchor link for: buttons tags" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Button tags
+            </h2>
+            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+            <form class="bs-example" data-example-id="btn-tags">
+              <a href="#" class="btn btn-default" role="button">Link</a>
+              <button class="btn btn-default" type="submit">Button</button>
+              <input class="btn btn-default" type="button" value="Input">
+              <input class="btn btn-default" type="submit" value="Submit">
+            </form>
+            <h2 id="buttons-options">
+            <a class="anchorjs-link " href="#buttons-options" aria-label="Anchor link for: buttons options" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Options
+            </h2>
+            <p>Use any of the available button classes to quickly create a styled button.</p>
+            <div class="bs-example" data-example-id="btn-variants">
+              <button type="button" class="btn btn-default">Default</button>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <h2 id="buttons-sizes">
+            <a class="anchorjs-link " href="#buttons-sizes" aria-label="Anchor link for: buttons sizes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Sizes
+            </h2>
+            <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+            <div class="bs-example" data-example-id="btn-sizes">
+              <p>
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-default btn-lg">Large button</button>
+              </p>
+              <p>
+                <button type="button" class="btn btn-primary">Default button</button>
+                <button type="button" class="btn btn-default">Default button</button>
+              </p>
+              <p>
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-default btn-sm">Small button</button>
+              </p>
+              <p>
+                <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+              </p>
+            </div>
+            <p>Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.</p>
+            <div class="bs-example" data-example-id="block-btns">
+              <div class="well center-block" style="max-width:400px">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+              </div>
+            </div>
+            <h2 id="buttons-active">
+            <a class="anchorjs-link " href="#buttons-active" aria-label="Anchor link for: buttons active" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Active state
+            </h2>
+            <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> on <code>&lt;button&gt;</code>s (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the active state programmatically.</p>
+            <h3 id="button-element">
+            <a class="anchorjs-link " href="#button-element" aria-label="Anchor link for: button element" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Button element</h3>
+            <p>No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.</p>
+            <p class="bs-example" data-example-id="active-button-btns">
+              <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+              <button type="button" class="btn btn-default btn-lg active">Button</button>
+            </p>
+            <h3 id="anchor-element">
+            <a class="anchorjs-link " href="#anchor-element" aria-label="Anchor link for: anchor element" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Anchor element
+            </h3>
+            <p>Add the <code>.active</code> class to <code>&lt;a&gt;</code> buttons.</p>
+            <p class="bs-example" data-example-id="active-anchor-btns">
+              <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+              <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+            </p>
+            <h2 id="buttons-disabled">
+            <a class="anchorjs-link " href="#buttons-disabled" aria-label="Anchor link for: buttons disabled" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled state
+            </h2>
+            <p>Make buttons look unclickable by fading them back with <code>opacity</code>.</p>
+            <h3 id="button-element-1">
+            <a class="anchorjs-link " href="#button-element-1" aria-label="Anchor link for: button element 1" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Button element
+            </h3>
+            <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+            <p class="bs-example" data-example-id="disabled-button-btns">
+              <button type="button" class="btn btn-primary btn-lg" disabled="">Primary button</button>
+              <button type="button" class="btn btn-default btn-lg" disabled="">Button</button>
+            </p>
+            <h3 id="anchor-element-1">
+            <a class="anchorjs-link " href="#anchor-element-1" aria-label="Anchor link for: anchor element 1" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Anchor element
+            </h3>
+            <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+            <p class="bs-example" data-example-id="disabled-anchor-btns">
+              <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+              <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+            </p>
+          </div><!-- .bs-docs-section buttons-->
+
+          <div class="bs-docs-section">
+            <h1 class="page-header" id="forms">
+              <a class="anchorjs-link " href="#forms" aria-label="Anchor link for: forms" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Forms
+            </h1>
+            <h2 id="forms-example">
+              <a class="anchorjs-link " href="#forms-example" aria-label="Anchor link for: forms example" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic example
+            </h2>
+            <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code>    by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+            <div class="bs-example" data-example-id="basic-forms">
+              <form>
+                <div class="form-group"> <label for="exampleInputEmail1">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div>
+                <div class="form-group"> <label for="exampleInputPassword1">Password</label> <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> </div>
+                <div class="form-group"> <label for="exampleInputFile">File input</label> <input type="file" id="exampleInputFile">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox"> <label> <input type="checkbox"> Check me out </label> </div> <button type="submit" class="btn btn-default">Submit</button> </form>
+            </div>
+            <h2 id="forms-inline"><a class="anchorjs-link " href="#forms-inline" aria-label="Anchor link for: forms inline" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inline form</h2>
+            <p>Add <code>.form-inline</code> to your form (which doesn't have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
+            <div class="bs-example" data-example-id="simple-form-inline">
+              <form class="form-inline">
+                <div class="form-group"> <label for="exampleInputName2">Name</label> <input class="form-control" id="exampleInputName2" placeholder="Jane Doe"> </div>
+                <div class="form-group"> <label for="exampleInputEmail2">Email</label> <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"> </div> <button type="submit" class="btn btn-default">Send invitation</button> </form>
+            </div>
+            <div class="bs-example" data-example-id="simple-form-inline">
+              <form class="form-inline">
+                <div class="form-group"> <label class="sr-only" for="exampleInputEmail3">Email address</label> <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email"> </div>
+                <div class="form-group"> <label class="sr-only" for="exampleInputPassword3">Password</label> <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password"> </div>
+                <div class="checkbox"> <label> <input type="checkbox"> Remember me </label> </div> <button type="submit" class="btn btn-default">Sign in</button> </form>
+            </div>
+            <div class="bs-example" data-example-id="form-inline-with-input-group">
+              <form class="form-inline">
+                <div class="form-group"> <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div> <input class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <div class="input-group-addon">.00</div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Transfer cash</button> </form>
+            </div>
+            <h2 id="forms-horizontal"><a class="anchorjs-link " href="#forms-horizontal" aria-label="Anchor link for: forms horizontal" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Horizontal form</h2>
+            <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn't have to be a <code>&lt;form&gt;</code>). Doing so changes <code>.form-group</code>s
+              to behave as grid rows, so no need for <code>.row</code>.</p>
+            <div class="bs-example" data-example-id="simple-horizontal-form">
+              <form class="form-horizontal">
+                <div class="form-group"> <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10"> <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> </div>
+                </div>
+                <div class="form-group"> <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                  <div class="col-sm-10"> <input type="password" class="form-control" id="inputPassword3" placeholder="Password"> </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox"> <label> <input type="checkbox"> Remember me </label> </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10"> <button type="submit" class="btn btn-default">Sign in</button> </div>
+                </div>
+              </form>
+            </div>
+            <h2 id="forms-controls"><a class="anchorjs-link " href="#forms-controls" aria-label="Anchor link for: forms controls" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Supported controls</h2>
+            <p>Examples of standard form controls supported in an example form layout.</p>
+            <h3 id="inputs"><a class="anchorjs-link " href="#inputs" aria-label="Anchor link for: inputs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inputs</h3>
+            <p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>,
+              <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+            <div class="bs-example" data-example-id="text-form-control">
+              <form> <input class="form-control" placeholder="Text input"> </form>
+            </div>
+            <h3 id="textarea"><a class="anchorjs-link " href="#textarea" aria-label="Anchor link for: textarea" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Textarea</h3>
+            <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+            <div class="bs-example" data-example-id="textarea-form-control">
+              <form> <textarea class="form-control" rows="3" placeholder="Textarea"></textarea> </form>
+            </div>
+            <h3 id="checkboxes-and-radios"><a class="anchorjs-link " href="#checkboxes-and-radios" aria-label="Anchor link for: checkboxes and radios" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Checkboxes and radios</h3>
+            <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+            <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>,
+              <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+            <h4 id="default-stacked"><a class="anchorjs-link " href="#default-stacked" aria-label="Anchor link for: default stacked" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Default (stacked)</h4>
+            <div class="bs-example" data-example-id="block-checkboxes-radios">
+              <form>
+                <div class="checkbox"> <label> <input type="checkbox" value=""> Option one is this and that—be sure to include why it's great </label> </div>
+                <div class="checkbox disabled"> <label> <input type="checkbox" value="" disabled=""> Option two is disabled </label> </div> <br>
+                <div class="radio"> <label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one is this and that—be sure to include why it's great </label> </div>
+                <div class="radio"> <label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one </label> </div>
+                <div class="radio disabled"> <label> <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled=""> Option three is disabled </label> </div>
+              </form>
+            </div>
+            <h4 id="inline-checkboxes-and-radios"><a class="anchorjs-link " href="#inline-checkboxes-and-radios" aria-label="Anchor link for: inline checkboxes and radios" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inline checkboxes and radios</h4>
+            <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+            <div class="bs-example" data-example-id="inline-checkboxes-radios">
+              <form> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1"> 1 </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2"> 2 </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox3" value="option3"> 3 </label>      </form> <br>
+              <form> <label class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 </label> <label class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 </label>
+                <label
+                  class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 </label>
+              </form>
+            </div>
+            <h4 id="checkboxes-and-radios-without-label-text"><a class="anchorjs-link " href="#checkboxes-and-radios-without-label-text" aria-label="Anchor link for: checkboxes and radios without label text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Checkboxes and radios without label text</h4>
+            <p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.</strong> Remember to still provide some form of label for assistive technologies
+              (for instance, using <code>aria-label</code>).</p>
+            <div class="bs-example" data-example-id="checkboxes-radios-without-labels">
+              <form>
+                <div class="checkbox"> <label> <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Checkbox without label text"> </label> </div>
+                <div class="radio"> <label> <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="Radio button without label text"> </label> </div>
+              </form>
+            </div>
+            <h3 id="selects"><a class="anchorjs-link " href="#selects" aria-label="Anchor link for: selects" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Selects</h3>
+            <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+            <div class="bs-example" data-example-ids="select-form-control">
+              <form> <select class="form-control"> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> </select> </form>
+            </div>
+            <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+            <div class="bs-example" data-example-ids="select-multiple-form-control">
+              <form> <select multiple="" class="form-control"> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> </select> </form>
+            </div>
+            <h2 id="forms-controls-static"><a class="anchorjs-link " href="#forms-controls-static" aria-label="Anchor link for: forms controls static" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Static control</h2>
+            <p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
+            <div class="bs-example" data-example-id="horizontal-static-form-control">
+              <form class="form-horizontal">
+                <div class="form-group"> <label class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static">email@example.com</p>
+                  </div>
+                </div>
+                <div class="form-group"> <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                  <div class="col-sm-10"> <input type="password" class="form-control" id="inputPassword" placeholder="Password"> </div>
+                </div>
+              </form>
+            </div>
+            <div class="bs-example" data-example-id="inline-static-form-control">
+              <form class="form-inline">
+                <div class="form-group"> <label class="sr-only">Email</label>
+                  <p class="form-control-static">email@example.com</p>
+                </div>
+                <div class="form-group"> <label for="inputPassword2" class="sr-only">Password</label> <input type="password" class="form-control" id="inputPassword2" placeholder="Password"> </div> <button type="submit" class="btn btn-default">Confirm identity</button> </form>
+            </div>
+            <h2 id="forms-control-focus"><a class="anchorjs-link " href="#forms-control-focus" aria-label="Anchor link for: forms control focus" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Focus state</h2>
+            <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
+            <div class="bs-example">
+              <form> <input class="form-control" id="focusedInput" value="Demonstrative focus state"> </form>
+            </div>
+            <h2 id="forms-control-disabled"><a class="anchorjs-link " href="#forms-control-disabled" aria-label="Anchor link for: forms control disabled" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled state</h2>
+            <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</p>
+            <div class="bs-example" data-example-id="text-form-control-disabled">
+              <form> <input class="form-control" id="disabledInput" placeholder="Disabled input here…" disabled=""> </form>
+            </div>
+            <h3 id="forms-disabled-fieldsets"><a class="anchorjs-link " href="#forms-disabled-fieldsets" aria-label="Anchor link for: forms disabled fieldsets" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled fieldsets</h3>
+            <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
+            <div class="bs-example" data-example-id="disabled-fieldset">
+              <form>
+                <fieldset disabled="">
+                  <div class="form-group"> <label for="disabledTextInput">Disabled input</label> <input id="disabledTextInput" class="form-control" placeholder="Disabled input"> </div>
+                  <div class="form-group"> <label for="disabledSelect">Disabled select menu</label> <select id="disabledSelect" class="form-control"> <option>Disabled select</option> </select> </div>
+                  <div class="checkbox"> <label> <input type="checkbox"> Can't check this </label> </div> <button type="submit" class="btn btn-primary">Submit</button> </fieldset>
+              </form>
+            </div>
+            <h2 id="forms-control-readonly"><a class="anchorjs-link " href="#forms-control-readonly" aria-label="Anchor link for: forms control readonly" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Readonly state</h2>
+            <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
+            <div class="bs-example" data-example-id="readonly-text-form-control">
+              <form> <input class="form-control" placeholder="Readonly input here…" readonly=""> </form>
+            </div>
+            <h2 id="forms-help-text"><a class="anchorjs-link " href="#forms-help-text" aria-label="Anchor link for: forms help text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Help text</h2>
+            <p>Block level help text for form controls.</p>
+            <div class="bs-example" data-example-id="simple-help-text">
+              <form>
+                <div class="form-group"> <label for="inputHelpBlock">Input with help text</label> <input id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"> </div> <span class="help-block" id="helpBlock">A block of help text that breaks onto a new line and may extend beyond one line.</span>      </form>
+            </div>
+          </div><!-- .bs-docs-section forms -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
