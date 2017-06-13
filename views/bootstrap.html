@@ -272,6 +272,37 @@
                 <div class="form-group"> <label for="inputHelpBlock">Input with help text</label> <input id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"> </div> <span class="help-block" id="helpBlock">A block of help text that breaks onto a new line and may extend beyond one line.</span>      </form>
             </div>
           </div><!-- .bs-docs-section forms -->
+
+          <div class=bs-docs-section>
+            <h1 class=page-header id=alerts>Alerts</h1>
+            <p class=lead>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+            <h2 id=alerts-examples>Examples</h2>
+            <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+            <div class=bs-example data-example-id=simple-alerts>
+              <div class="alert alert-success" role=alert> <strong>Well done!</strong> You successfully read this important alert message. </div>
+              <div class="alert alert-info" role=alert> <strong>Heads up!</strong> This alert needs your attention, but it's not super important. </div>
+              <div class="alert alert-warning" role=alert> <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
+              <div class="alert alert-danger" role=alert> <strong>Oh snap!</strong> Change a few things up and try submitting again. </div>
+            </div>
+            <h2 id=alerts-dismissible>Dismissible alerts</h2>
+            <p>Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
+            <div class=bs-example data-example-id=dismissible-alert-css>
+              <div class="alert alert-warning alert-dismissible" role=alert> <button type=button class=close data-dismiss=alert aria-label=Close><span aria-hidden=true>&times;</span></button> <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
+            </div>
+            <h2 id=alerts-links>Links in alerts</h2>
+            <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+            <div class="bs-callout bs-callout-warning" id=callout-alerts-dismiss-use-button>
+              <h4>Actually</h4>
+              <p>All alert links are blue in this theme.</p>
+            </div>
+            <div class=bs-example data-example-id=alerts-with-links>
+              <div class="alert alert-success" role=alert> <strong>Well done!</strong> You successfully read <a href=# class=alert-link>this important alert message</a>. </div>
+              <div class="alert alert-info" role=alert> <strong>Heads up!</strong> This <a href=# class=alert-link>alert needs your attention</a>, but it's not super important. </div>
+              <div class="alert alert-warning" role=alert> <strong>Warning!</strong> Better check yourself, you're <a href=# class=alert-link>not looking too good</a>. </div>
+              <div class="alert alert-danger" role=alert> <strong>Oh snap!</strong> <a href=# class=alert-link>Change a few things up</a> and try submitting again. </div>
+            </div>
+          </div><!-- .bs-docs-section alerts -->
+          
         </div>
       </div>
     </div>
