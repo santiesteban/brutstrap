@@ -359,7 +359,7 @@
             <h2 id="nav-dropdowns"><a class="anchorjs-link " href="#nav-dropdowns" aria-label="Anchor link for: nav dropdowns" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Using dropdowns</h2>
             <p>Add dropdown menus with a little extra HTML and the <a href="../javascript/#dropdowns">dropdowns JavaScript plugin</a>.</p>
             <h3 id="tabs-with-dropdowns"><a class="anchorjs-link " href="#tabs-with-dropdowns" aria-label="Anchor link for: tabs with dropdowns" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Tabs with dropdowns</h3>
-            <div class="bs-example" data-example-id="nav-tabs-with-dropdown">
+            <div class="bs-example" data-example-id="nav-tabs-with-dropdown">z
               <ul class="nav nav-tabs">
                 <li role="presentation" class="active"><a href="#">Home</a></li>
                 <li role="presentation"><a href="#">Help</a></li>
@@ -391,6 +391,135 @@
               </ul>
             </div>
           </div><!-- .bs-docs-section navs -->
+
+          <div class="bs-docs-section">
+            <h1 class="page-header" id="breadcrumbs"><a class="anchorjs-link " href="#breadcrumbs" aria-label="Anchor link for: breadcrumbs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Breadcrumbs</h1>
+            <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
+            <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
+            <div class="bs-example" data-example-id="simple-breadcrumbs">
+              <ol class="breadcrumb">
+                <li class="active">Home</li>
+              </ol>
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Library</li>
+              </ol>
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+              </ol>
+            </div>
+          </div><!-- .bs-docs-section breadcrumbs -->
+
+          <div class="bs-docs-section">
+            <h1 class="page-header" id="pagination"><a class="anchorjs-link " href="#pagination" aria-label="Anchor link for: pagination" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Pagination</h1>
+            <p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pagination-pager">pager alternative</a>.</p>
+            <h2 id="pagination-default"><a class="anchorjs-link " href="#pagination-default" aria-label="Anchor link for: pagination default" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Default pagination</h2>
+            <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+            <div class="bs-example" data-example-id="simple-pagination">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous"> <span aria-hidden="true">«</span> </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next"> <span aria-hidden="true">»</span> </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <h3 id="disabled-and-active-states"><a class="anchorjs-link " href="#disabled-and-active-states" aria-label="Anchor link for: disabled and active states" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled and active states</h3>
+            <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
+            <div class="bs-example" data-example-id="disabled-active-pagination">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <p>We recommend that you swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
+            <h3 id="sizing"><a class="anchorjs-link " href="#sizing" aria-label="Anchor link for: sizing" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Sizing</h3>
+            <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+            <div class="bs-example" data-example-id="pagination-sizing">
+              <nav aria-label="...">
+                <ul class="pagination pagination-lg">
+                  <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+              </nav>
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+              </nav>
+              <nav aria-label="...">
+                <ul class="pagination pagination-sm">
+                  <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <h2 id="pagination-pager"><a class="anchorjs-link " href="#pagination-pager" aria-label="Anchor link for: pagination pager" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Pager</h2>
+            <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+            <h3 id="default-example"><a class="anchorjs-link " href="#default-example" aria-label="Anchor link for: default example" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Default example</h3>
+            <p>By default, the pager centers links.</p>
+            <div class="bs-example" data-example-id="simple-pager">
+              <nav aria-label="...">
+                <ul class="pager">
+                  <li><a href="#">Previous</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+            <h3 id="aligned-links"><a class="anchorjs-link " href="#aligned-links" aria-label="Anchor link for: aligned links" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Aligned links</h3>
+            <p>Alternatively, you can align each link to the sides:</p>
+            <div class="bs-example" data-example-id="aligned-pager-links">
+              <nav aria-label="...">
+                <ul class="pager">
+                  <li class="previous"><a href="#"><span aria-hidden="true">←</span> Older</a></li>
+                  <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <h3 id="optional-disabled-state"><a class="anchorjs-link " href="#optional-disabled-state" aria-label="Anchor link for: optional disabled state" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Optional disabled state</h3>
+            <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
+            <div class="bs-example" data-example-id="disabled-pager">
+              <nav aria-label="...">
+                <ul class="pager">
+                  <li class="previous disabled"><a href="#"><span aria-hidden="true">←</span> Older</a></li>
+                  <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div><!-- .bs-docs-section pagination -->
 
         </div><!-- left column -->
         <div class="col-sm-3">
