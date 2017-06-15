@@ -525,18 +525,6 @@
           <div class="bs-docs-section">
             <h1 class="page-header" id="modals"><a class="anchorjs-link " href="#modals" aria-label="Anchor link for: modals" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Modals <small>modal.js</small></h1>
             <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
-            <div class="bs-callout bs-callout-warning" id="callout-stacked-modals">
-              <h4>Multiple open modals not supported</h4>
-              <p>Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.</p>
-            </div>
-            <div class="bs-callout bs-callout-warning" id="callout-modal-markup-placement">
-              <h4>Modal markup placement</h4>
-              <p>Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.</p>
-            </div>
-            <div class="bs-callout bs-callout-warning" id="callout-modal-mobile-caveats">
-              <h4>Mobile device caveats</h4>
-              <p>There are some caveats regarding using modals on mobile devices. <a href="../getting-started/#support-fixed-position-keyboards">See our browser support docs</a> for details.</p>
-            </div>
             <p><strong class="text-danger">Due to how HTML5 defines its semantics, the <code>autofocus</code> HTML attribute has no effect in Bootstrap modals.</strong> To achieve the same effect, use some custom JavaScript:</p>
             <h2 id="modals-examples"><a class="anchorjs-link " href="#modals-examples" aria-label="Anchor link for: modals examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Examples</h2>
             <h3 id="static-example"><a class="anchorjs-link " href="#static-example" aria-label="Anchor link for: static example" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Static example</h3>
@@ -586,15 +574,6 @@
               </div>
             </div>
             <div class="bs-example bs-example-padded-bottom"> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> </div>
-            <div class="bs-callout bs-callout-warning" id="callout-modal-accessibility">
-              <h4>Make modals accessible</h4>
-              <p>Be sure to add <code>role="dialog"</code> and <code>aria-labelledby="..."</code>, referencing the modal title, to <code>.modal</code>, and <code>role="document"</code> to the <code>.modal-dialog</code> itself.</p>
-              <p>Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>.</p>
-            </div>
-            <div class="bs-callout bs-callout-info" id="callout-modal-youtube">
-              <h4>Embedding YouTube videos</h4>
-              <p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a>      for more information.</p>
-            </div>
             <h2 id="modals-sizes"><a class="anchorjs-link " href="#modals-sizes" aria-label="Anchor link for: modals sizes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Optional sizes</h2>
             <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>
             <div class="bs-example"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button> </div>
@@ -671,103 +650,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <h2 id="modals-usage"><a class="anchorjs-link " href="#modals-usage" aria-label="Anchor link for: modals usage" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Usage</h2>
-            <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open</code> to the <code>&lt;body&gt;</code> to override default scrolling behavior and generates a <code>.modal-backdrop</code> to
-              provide a click area for dismissing shown modals when clicking outside the modal.</p>
-            <h3 id="via-data-attributes"><a class="anchorjs-link " href="#via-data-attributes" aria-label="Anchor link for: via data attributes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Via data attributes</h3>
-            <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
-            <h3 id="via-javascript"><a class="anchorjs-link " href="#via-javascript" aria-label="Anchor link for: via javascript" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Via JavaScript</h3>
-            <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
-            <h3 id="modals-options"><a class="anchorjs-link " href="#modals-options" aria-label="Anchor link for: modals options" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Options</h3>
-            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
-            <div class="table-responsive">
-              <table class="table table-bordered table-striped js-options-table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>type</th>
-                    <th>default</th>
-                    <th>description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>backdrop</td>
-                    <td>boolean or the string <code>'static'</code></td>
-                    <td>true</td>
-                    <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
-                  </tr>
-                  <tr>
-                    <td>keyboard</td>
-                    <td>boolean</td>
-                    <td>true</td>
-                    <td>Closes the modal when escape key is pressed</td>
-                  </tr>
-                  <tr>
-                    <td>show</td>
-                    <td>boolean</td>
-                    <td>true</td>
-                    <td>Shows the modal when initialized.</td>
-                  </tr>
-                  <tr>
-                    <td>remote</td>
-                    <td>path</td>
-                    <td>false</td>
-                    <td>
-                      <p><strong class="text-danger">This option is deprecated since v3.3.0 and has been removed in v4.</strong> We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/">jQuery.load</a>              yourself.</p>
-                      <p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code>              attribute to specify the remote source. An example of this is shown below:</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <h3 id="modals-methods"><a class="anchorjs-link " href="#modals-methods" aria-label="Anchor link for: modals methods" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Methods</h3>
-            <h4 id="modal-options"><a class="anchorjs-link " href="#modal-options" aria-label="Anchor link for: modal options" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a><code>.modal(options)</code></h4>
-            <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
-            <h4 id="modal-toggle"><a class="anchorjs-link " href="#modal-toggle" aria-label="Anchor link for: modal toggle" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a><code>.modal('toggle')</code></h4>
-            <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
-            <h4 id="modal-show"><a class="anchorjs-link " href="#modal-show" aria-label="Anchor link for: modal show" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a><code>.modal('show')</code></h4>
-            <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
-            <h4 id="modal-hide"><a class="anchorjs-link " href="#modal-hide" aria-label="Anchor link for: modal hide" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a><code>.modal('hide')</code></h4>
-            <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
-            <h4 id="modal-handleupdate"><a class="anchorjs-link " href="#modal-handleupdate" aria-label="Anchor link for: modal handleupdate" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a><code>.modal('handleUpdate')</code></h4>
-            <p>Readjusts the modal's positioning to counter a scrollbar in case one should appear, which would make the modal jump to the left.</p>
-            <p>Only needed when the height of the modal changes while it is open.</p>
-            <h3 id="modals-events"><a class="anchorjs-link " href="#modals-events" aria-label="Anchor link for: modals events" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Events</h3>
-            <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
-            <p>All modal events are fired at the modal itself (i.e. at the <code>&lt;div class="modal"&gt;</code>).</p>
-            <div class="table-responsive">
-              <table class="table table-bordered table-striped bs-events-table">
-                <thead>
-                  <tr>
-                    <th>Event Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>show.bs.modal</td>
-                    <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
-                  </tr>
-                  <tr>
-                    <td>shown.bs.modal</td>
-                    <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
-                  </tr>
-                  <tr>
-                    <td>hide.bs.modal</td>
-                    <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
-                  </tr>
-                  <tr>
-                    <td>hidden.bs.modal</td>
-                    <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
-                  </tr>
-                  <tr>
-                    <td>loaded.bs.modal</td>
-                    <td>This event is fired when the modal has loaded content using the <code>remote</code> option.</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div><!-- .bs-docs-section modal -->
 
