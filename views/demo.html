@@ -9,7 +9,9 @@
   <body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <div class="navbar-header"> <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>          <a href="#" class="navbar-brand">Brand</a> </div>
+        <div class="navbar-header">
+          <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="#" class="navbar-brand">Brand</a>
+        </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
@@ -48,7 +50,7 @@
     <div class="container">
       <h1>Hello, world!</h1>
       <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more???</a></p>
+      <p><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">Learn more???</a></p>
     </div>
     </div><!-- jumbotron -->
     <div class="container">
@@ -97,46 +99,45 @@
                   <h1>Example page header <small>Subtext for header</small></h1>
                 </div>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <form>
-                    <fieldset>
-                      <legend>Legend</legend>
-                      <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <div class="form-group">
-                        <label for="inputEmail" class="control-label">Email</label>
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Checkbox
-                          </label>
-                        </div>
+                <form>
+                  <fieldset>
+                    <legend>Legend</legend>
+                    <div class="form-group">
+                      <label for="inputEmail" class="control-label">Email</label>
+                      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Checkbox
+                        </label>
                       </div>
-                      <div class="form-group">
-                        <label for="textArea" class="control-label">Textarea</label>
-                        <textarea class="form-control" rows="3" id="textArea"></textarea>
-                        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                    <div class="form-group">
+                      <label for="textArea" class="control-label">Textarea</label>
+                      <textarea class="form-control" rows="3" id="textArea"></textarea>
+                      <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">Radios</label>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                          Option one is this
+                        </label>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label">Radios</label>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                            Option one is this
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                            Option two can be something else
-                          </label>
-                        </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          Option two can be something else
+                        </label>
                       </div>
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="reset" class="btn btn-default">Cancel</button>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="reset" class="btn btn-default">Cancel</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
               </div><!-- form-->
             </div>
             <div class="col-md-3">
@@ -157,6 +158,37 @@
                 </div><!-- panel with list group -->
               </div>
             </div>
+            
+            <!-- modal -->
+            <div class="modal fade" role="dialog" id="myModal" tabindex="-1" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4> </div>
+                <div class="modal-body">
+                  <h4>Text in a modal</h4>
+                  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                  <h4>Popover in a modal</h4>
+                  <p>This <a href="#" class="btn btn-default popover-test" role="button" title="" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title">button</a> should trigger a popover on click.</p>
+                  <h4>Tooltips in a modal</h4>
+                  <p><a href="#" class="tooltip-test" title="" data-original-title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="" data-original-title="Tooltip">that link</a> should have tooltips on hover.</p>
+                  <hr>
+                  <h4>Overflowing text to show scroll behavior</h4>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button> </div>
+              </div>
+            </div>
+            </div><!-- modal -->
+            
           </body>
           <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
