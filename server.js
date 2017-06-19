@@ -30,6 +30,10 @@ app.get("/demo.html", function (request, response) {
   response.sendFile(__dirname + '/views/demo.html');
 });
 
+app.get("/demo.html", function (request, response) {
+  response.sendFile(__dirname + '/views/demo-boostrap.html');
+});
+
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
