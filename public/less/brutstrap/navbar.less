@@ -306,7 +306,10 @@
   }
 
   // Vertically center in expanded, horizontal navbar
-  .navbar-vertical-align(@input-height-base);
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar-vertical-align(@input-height-base);
+    color:salmon;
+  }
 
   // Undo 100% width for pull classes
   @media (min-width: @grid-float-breakpoint) {
