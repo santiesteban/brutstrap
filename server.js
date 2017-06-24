@@ -19,19 +19,15 @@ app.use(express.static('/tmp'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/docs-css.html');
+  response.sendFile(__dirname + '/views/components.html');
 });
 
-
-app.get("/components/", function (request, response) {
-  response.sendFile(__dirname + '/views/docs-components.html');
-});
 
 app.get("/demo/", function (request, response) {
   response.sendFile(__dirname + '/views/demo-home.html');
 });
 
-app.get("/demo/2/", function (request, response) {
+app.get("/demo-detail/", function (request, response) {
   response.sendFile(__dirname + '/views/demo-detail.html');
 });
 
