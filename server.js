@@ -19,23 +19,20 @@ app.use(express.static('/tmp'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  response.sendFile(__dirname + '/views/docs-css.html');
 });
 
-app.get("/bootstrap.html", function (request, response) {
-  response.sendFile(__dirname + '/views/bootstrap.html');
+
+app.get("/components/", function (request, response) {
+  response.sendFile(__dirname + '/views/docs-components.html');
 });
 
-app.get("/demo.html", function (request, response) {
-  response.sendFile(__dirname + '/views/demo.html');
+app.get("/demo/", function (request, response) {
+  response.sendFile(__dirname + '/views/demo-home.html');
 });
 
-app.get("/demo-detail.html", function (request, response) {
+app.get("/demo/2/", function (request, response) {
   response.sendFile(__dirname + '/views/demo-detail.html');
-});
-
-app.get("/demo-bootstrap.html", function (request, response) {
-  response.sendFile(__dirname + '/views/demo-bootstrap.html');
 });
 
 // listen for requests :)
